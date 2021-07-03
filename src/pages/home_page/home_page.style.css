@@ -1,0 +1,73 @@
+#HomePage .nav {
+  position: absolute;
+  width: 100%;
+}
+#HomePage .top-div {
+  height: 100vh;
+  /* border: solid; */
+  width: 100%;
+}
+#HomePage .top-div .flexbox {
+  display: flex;
+  /* flex: 1; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#HomePage .top-div .flexbox .item {
+  /* border: solid; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+#HomePage .top-div .flexbox .item span {
+  font-size: calc(5px + 6vw);
+  color: #00b0ff;
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-display: block;
+  margin-left: 20px;
+}
+#HomePage .top-div .flexbox .item p {
+  font-size: calc(2px + 1.7vw);
+  color: #00b0ff;
+  font-family: 'Courier New', Courier, monospace;
+}
+#HomePage .top-div .flexbox .item img {
+  width: calc(50px + 40vw);
+  height: 100vh;
+}
+#HomePage .about-div .flexbox {
+  display: flex;
+  justify-content: space-around;
+}
+#HomePage .about-div .flexbox .item {
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+}
+#HomePage .about-div .flexbox .about-text {
+  padding: 20px;
+  text-align: center;
+  width: 700px;
+  /* border: solid 2px red; */
+}
+#HomePage .about-div .flexbox .item img {
+  width: 30vw;
+}
+#HomePage .about-div .flexbox .item h1 {
+  color: #00b0ff;
+  font-size: calc(5px + 3vw);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-bottom: #00b0ff solid;
+  margin-bottom: 20px;
+}
+.why-us .flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: row;
+  /* border: solid; */
+  justify-content: space-around;
+}
+.why-us .flexbox .item {
+  width: 300px;
+}

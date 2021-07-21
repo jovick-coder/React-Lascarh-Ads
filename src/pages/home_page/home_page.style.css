@@ -1,39 +1,17 @@
 #HomePage .nav {
   position: absolute;
   width: 100%;
+  position: fixed;
 }
 #HomePage .top-div {
-  height: 100vh;
-  /* border: solid; */
   width: 100%;
 }
 #HomePage .top-div .flexbox {
   display: flex;
-  /* flex: 1; */
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#HomePage .top-div .flexbox .item {
-  /* border: solid; */
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-#HomePage .top-div .flexbox .item span {
-  font-size: calc(5px + 6vw);
-  color: #00b0ff;
-  font-family: 'Zen Tokyo Zoo', cursive;
-  font-display: block;
-  margin-left: 20px;
-}
-#HomePage .top-div .flexbox .item p {
-  font-size: calc(2px + 1.7vw);
-  color: #00b0ff;
-  font-family: 'Courier New', Courier, monospace;
+  /* border: red solid; */
 }
 #HomePage .top-div .flexbox .item img {
-  width: calc(50px + 40vw);
-  height: 100vh;
+  width: 100%;
 }
 #HomePage .about-div .flexbox {
   display: flex;
@@ -60,6 +38,19 @@
   border-bottom: #00b0ff solid;
   margin-bottom: 20px;
 }
+.why-us .why-us-text {
+  background-color: #00b0ff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.why-us .why-us-text h1 {
+  color: #ddd;
+  border-bottom: solid;
+  text-align: center;
+  padding-left: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: calc(5px + 3vw);
+}
 .why-us .flexbox {
   display: flex;
   flex-wrap: wrap;
@@ -70,4 +61,108 @@
 }
 .why-us .flexbox .item {
   width: 300px;
+}
+
+@media (min-width: 426px) {
+  #HomePage .top-div {
+    height: 100vh;
+    /* border: solid; */
+    width: 100%;
+  }
+  #HomePage .top-div .flexbox {
+    display: flex;
+    /* flex: 1; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #HomePage .top-div .flexbox .item {
+    /* border: solid; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  #HomePage .top-div .flexbox .item span {
+    font-size: calc(5px + 6vw);
+    color: #00b0ff;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-display: block;
+    margin-left: 20px;
+  }
+  #HomePage .top-div .flexbox .item p {
+    font-size: calc(2px + 1.7vw);
+    color: #00b0ff;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  #HomePage .top-div .flexbox .item img {
+    width: calc(50px + 40vw);
+    height: 100vh;
+  }
+}
+@media (min-width: 0px) and (max-width: 425px) {
+  #HomePage .nav {
+    /* background-color: #ddd; */
+    /* height: 50px; */
+    /* position: relative; */
+    top: 0;
+    z-index: 2;
+  }
+  #HomePage .top-div {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  #HomePage .top-div .flexbox {
+    display: flex;
+    margin-top: 20px;
+    /* border: solid; */
+  }
+  #HomePage .top-div .flexbox .text {
+    /* display: none; */
+    /* border: solid; */
+    width: 100%;
+    /* z-index: 1px; */
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    padding: 10px;
+    /* color: #00b0ff; */
+    font-family: 'Zen Tokyo Zoo', cursive;
+    background-color: rgba(0, 0, 0, 0.446);
+  }
+  #HomePage .top-div .flexbox .text span {
+    font-size: 35px;
+    color: white;
+    border-bottom: solid 5px;
+    text-decoration: double;
+  }
+  #HomePage .top-div .flexbox .text p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  #HomePage .top-div .flexbox .item img {
+    width: 100%;
+  }
+  #HomePage .about-div .flexbox {
+    display: block;
+    flex-direction: column;
+    /* margin: auto; */
+    /* justify-content: space-around; */
+  }
+  #HomePage .about-div .flexbox .item {
+    width: 100vw;
+    /* border: solid; */
+    text-align: center;
+  }
+  #HomePage .about-div .flexbox .item .img-div {
+    border: #00b0ff 5px solid;
+    margin: auto;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    overflow: hidden;
+  }
+  #HomePage .about-div .flexbox .about-text h1 {
+    font-size: 20px;
+  }
 }

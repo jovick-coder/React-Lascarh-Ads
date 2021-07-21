@@ -1,0 +1,57 @@
+.profile-div .flexboxs {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-div .flexboxs .item {
+  border: solid;
+}
+.profile-div .flexboxs .profile-img {
+  width: 200px;
+
+  /* border: solid; */
+}
+.profile-div .flexboxs .profile-text {
+  width: 300px;
+  display: flex;
+  align-items: center;
+
+  /* border: solid; */
+}
+.profile-div .flexboxs img {
+  width: 100vw;
+  margin: auto;
+  /* min-width: 200px;
+  height: 200px;
+  border: solid #000;
+  border-radius: 50%; */
+}
+.profile-div .flexboxs .pic-div {
+  width: 30vw;
+  display: flex;
+
+  min-width: 200px;
+  height: 200px;
+  border: solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (min-width: 0px) and (max-width: 425px) {
+  .profile-div .flexboxs {
+    display: block;
+  }
+  .profile-div .flexboxs .profile-img {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+
+    /* border: solid; */
+  }
+  .profile-div .flexboxs .profile-text {
+    width: 100%;
+    padding: 20px;
+    /* display: flex;
+    align-items: center;
+
+    border: solid; */
+  }
+}

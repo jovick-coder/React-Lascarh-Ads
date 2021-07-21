@@ -1,0 +1,83 @@
+#LogiPage .nav {
+  position: absolute;
+  z-index: 200000px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+#LogiPage .form-div {
+  padding-top: 100px;
+  width: 100vw;
+  /* border: solid red; */
+  /* display: flex; */
+  /* text-align: center; */
+}
+#LogiPage .form-div .flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: black solid; */
+}
+#LogiPage .form-div .flexbox .item {
+  width: 50vw;
+  border: solid #00b0ff;
+  border-radius: 20px;
+  height: 70vh;
+  background-color: #00b0ff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  /* padding: 10px; */
+  min-width: 300px;
+  text-align: center;
+  max-width: 400px;
+}
+#LogiPage .form-div .flexbox .item .top-text {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  border-bottom: solid 1px;
+  text-align: center;
+}
+#LogiPage .form-div .flexbox .item .form-input {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+}
+#LogiPage .form-div .flexbox .sign-in {
+  height: 80vh;
+}
+#LogiPage .form-div .flexbox .forgot-password {
+  height: 50vh;
+}
+#LogiPage .form-div .flexbox .item .form-input {
+  margin: 20px 10px;
+  /* border: solid; */
+}
+#LogiPage .form-div .flexbox .item .form-input label {
+  margin: 5px 10px;
+  color: white;
+}
+#LogiPage .form-div .flexbox .item .form-input input {
+  /* margin: 5px 10px; */
+  color: #ddd;
+  border: solid;
+  /* background-color: #ddd; */
+}
+#LogiPage .form-div .flexbox .item .link {
+  margin-top: 10px;
+  padding: 40px 0 10px 10px;
+  /* border: solid; */
+}
+#LogiPage .form-div .flexbox .item .link a {
+  /* margin-top: 10px; */
+  padding: 10px 0 0px 0px;
+  /* border: solid; */
+  text-decoration: none;
+  color: #ddd;
+}
+@media (min-width: 0px) and (max-width: 425px) {
+  #LogiPage .form-div .flexbox .item {
+    min-width: 280px;
+  }
+}

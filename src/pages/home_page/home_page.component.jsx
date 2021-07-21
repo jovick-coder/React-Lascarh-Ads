@@ -16,13 +16,13 @@ const HomePage = () => {
         </div>
         <div className="top-div">
           <div className="flexbox">
-            <div className="item">
+            <div className="item text">
               <span>
                 Social Influencer
                 <p>
                   Making your buesiness influence Online
                   <br />
-                  <button className="btn btn-primary mt-2">Sign_in</button>
+                  <button className="btn btn-primary mt-2 btn-sm">Start</button>
                 </p>
               </span>
             </div>
@@ -30,7 +30,7 @@ const HomePage = () => {
               <img
                 src="./img/Social_influencer.svg"
                 alt="Social_influencer"
-                srcset=""
+                srcSet=""
               />
             </div>
           </div>
@@ -38,7 +38,10 @@ const HomePage = () => {
         <div className="about-div">
           <div className="flexbox">
             <div className="item">
-              <img src="./img/team.png" alt="" srcset="" />
+              <div className="img-div">
+                {' '}
+                <img src="./img/team.png" alt="" srcSet="" />
+              </div>
             </div>
             <div className="item about-text">
               <div>
@@ -47,7 +50,7 @@ const HomePage = () => {
                 Incidunt, commodi ducimus? Inventore suscipit dolorem nemo
                 assumenda animi ducimus placeat consequuntur ullam, error amet,
                 optio autem, iste facere minus consectetur sunt. Ipsam, pariatur
-                est suscipit neque dignissimos obcaecati vitae consectetur eos
+                est suscipit neque dignissimos obcaecati vitae consectetur
                 <br />
                 <Link to="about-us">
                   <button className="btn btn-primary">More...</button>
@@ -76,11 +79,13 @@ const HomePage = () => {
         </div> */}
 
         <div className="why-us">
-          <h1>Why Us</h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum
-          illum ratione, laudantium asperiores at fugiat repudiandae
-          necessitatibus est tempore ut magni libero vel, vero, dolorem enim
-          consequuntur laborum mollitia.
+          <div className="why-us-text">
+            <h1>Why Us</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum
+            illum ratione, laudantium asperiores at fugiat repudiandae
+            necessitatibus est tempore ut magni libero vel, vero, dolorem enim
+            consequuntur laborum mollitia.
+          </div>
           <div className="flexbox">
             <div className="item">
               <AdsCard />

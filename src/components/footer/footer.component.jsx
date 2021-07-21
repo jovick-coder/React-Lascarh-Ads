@@ -8,78 +8,83 @@ const Footer = () => {
         <footer>
           <img src="./img/logo.png" alt="" />
 
-          <div class="footer-container">
-            <div class="item">
+          <div className="footer-container">
+            <div className="item">
               <span>QUICK LINKS</span>
               <ul>
                 <li>
-                  <img src="./img/icons/house.svg" class="icon" alt="" /> Home
+                  <img src="./img/icons/house.svg" className="icon" alt="" />{' '}
+                  Home
                 </li>
                 <li>
                   <img
                     src="./img/icons/person-bounding-box.svg"
-                    class="icon"
+                    className="icon"
                     alt=""
                   />{' '}
                   About
                 </li>
                 <li>
-                  <img src="./img/icons/tools.svg" class="icon" alt="" />{' '}
+                  <img src="./img/icons/tools.svg" className="icon" alt="" />{' '}
                   Service
                 </li>
                 <li>
                   <img
                     src="./img/icons/telephone-fill.svg"
-                    class="icon"
+                    className="icon"
                     alt=""
                   />{' '}
                   Countact
                 </li>
               </ul>
             </div>
-            <div class="item">
+            <div className="item">
               <span>HELP & SUPPORT</span>
               <ul>
                 <li>
                   <img
                     src="./img/icons/question-circle.svg"
-                    class="icon"
+                    className="icon"
                     alt=""
                   />
                   FAQ
                 </li>
                 <li>
-                  <img src="./img/icons/archive.svg" class="icon" alt="" />
+                  <img src="./img/icons/archive.svg" className="icon" alt="" />
                   Support
                 </li>
                 <li>
-                  <img src="./img/icons/people.svg" class="icon" alt="" />
+                  <img src="./img/icons/people.svg" className="icon" alt="" />
                   Terms of Service
                 </li>
               </ul>
             </div>
-            <div class="item">
+            <div className="item">
               <span>COUNTACT</span>
               <ul>
                 <li>
-                  <img src="./img/icons/envelope.svg" class="icon" alt="" />{' '}
+                  <img src="./img/icons/envelope.svg" className="icon" alt="" />{' '}
                   lascarh@gmail.com
                 </li>
                 <li>
-                  <img src="./img/icons/phone.svg" class="icon" alt="" />{' '}
+                  <img src="./img/icons/phone.svg" className="icon" alt="" />{' '}
                   08137297150
                 </li>
                 <li>
-                  <img src="./img/icons/map.svg" class="icon" alt="" /> Abuja
+                  <img src="./img/icons/map.svg" className="icon" alt="" />{' '}
+                  Abuja
                 </li>
               </ul>
             </div>
-            <div class="item">
-              <span>ABOUT</span> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Vero rerum suscipit ut possimus nisi nobis sit
-              aperiam accusantium vel veniam at dolorem eaque magni dicta ullam
-              quisquam ex, odit non!
-              <div class="social-icons">
+            <div className="item">
+              <span>ABOUT</span>{' '}
+              <div className="about-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                rerum suscipit ut possimus nisi nobis sit aperiam accusantium
+                vel veniam at dolorem eaque magni dicta ullam quisquam ex, odit
+                non!
+              </div>
+              <div className="social-icons">
                 <ul>
                   <li>
                     <img src="./img/icons/facebook.svg" alt="" />

@@ -1,0 +1,106 @@
+#side-nav {
+  background-color: #ddd;
+  /* min-width: 200px; */
+  max-width: 200px;
+
+  width: 40vw;
+  height: 100vh;
+  overflow: hidden;
+  /* left: 0;
+  position: fixed; */
+}
+/* #side-nav .nav {
+  /* border: solid; *
+} */
+#side-nav .nav .link-div {
+  /* border: solid red; */
+  width: 100%;
+}
+#side-nav .nav .link-div ul {
+  margin: 0;
+  padding: 0;
+}
+#side-nav .nav .link-div ul li a {
+  padding: 25px 30px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+#side-nav .nav .link-div ul li a:hover {
+  background-color: aliceblue;
+  color: #555555;
+  /* /* color: ; * */
+}
+.side-nav .menu-btn {
+  position: absolute;
+  right: 10px;
+  top: -45px;
+  z-index: 20;
+  width: 60px;
+  background-color: #00aeffd5;
+  color: #ffffff;
+}
+.side-nav .social-icons {
+  position: absolute;
+  display: flex;
+  right: 10px;
+  top: -45px;
+  z-index: 20;
+  /* width: 60px; */
+  /* background-color: #00aeffd5; */
+  /* color: #ffffff; */
+}
+.side-nav .social-icons ul {
+  /* float: right; */
+  /* border: solid; */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.side-nav .social-icons ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.side-nav .social-icons ul li img {
+  width: 20px;
+  margin: 10px;
+  padding: 0;
+  filter: invert();
+}
+@media (min-width: 0px) and (max-width: 425px) {
+  #side-nav {
+    max-width: 200px;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    /* position: absolute; */
+    /* left: 0; */
+    /* z-index: 99999999999999999px; */
+    /* top: 0; */
+    /* font-style: italic; */
+  }
+  #side-nav .nav .link-div ul li a {
+    padding: 20px 20px;
+  }
+  .side-nav .social-icons {
+    position: relative;
+    /* display: flex; */
+    left: 20px;
+    border: solid;
+    /* top: -45px; */
+    top: 5px;
+    z-index: 20;
+    /* width: 60px; */
+    /* background-color: #00aeffd5; */
+    /* color: #ffffff; */
+  }
+  .side-nav .social-icons ul li img {
+    width: 20px;
+    margin: 5px;
+    border: solid red;
+    padding: 0;
+    filter: invert();
+  }
+}

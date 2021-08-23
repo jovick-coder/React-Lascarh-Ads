@@ -7,7 +7,7 @@
     height: 60px;
     position: absolute;
     /* top: 0; */
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(50, 50, 50);
     /* box-shadow: 1px 1px 1px 20px 0.5 red; */
   }
   #navBar .flexbox .logo-div .menu-btn {
@@ -78,7 +78,7 @@
 
 @media (min-width: 0px) and (max-width: 425px) {
   #navBar {
-    background-color: rgb(123, 123, 123);
+    background-color: rgb(50, 50, 50);
     width: 100%;
     height: 50px;
     /* position: relative; */

@@ -5,6 +5,16 @@ import { Link } from 'react-router-dom'
 import './nav_bar.style.css'
 import './side_nav.style.css'
 
+import facebookImg from './img/facebook.svg'
+import linkedinImg from './img/linkedin.svg'
+import githubImg from './img/github.svg'
+import googleImg from './img/google.svg'
+import twitterImg from './img/twitter.svg'
+import personBoundingBoxImg from './img/person-bounding-box.svg'
+import house from './img/house.svg'
+import tools from './img/tools.svg'
+import doorOpen from './img/door-open.svg'
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isDesktop, setIsDesktop] = useState(false)
@@ -13,13 +23,14 @@ const NavBar = () => {
     const desktopView = window.matchMedia('(min-width:426px)')
     // console.log('desktopView === ', desktopView.matches)
     if (desktopView.matches === true) {
+      console.log(isDesktop)
       setIsDesktop(true)
       setIsOpen(true)
     } else {
       setIsOpen(false)
       setIsDesktop(false)
     }
-  }, [])
+  }, [isDesktop])
 
   return (
     <>
@@ -46,33 +57,25 @@ const NavBar = () => {
               {/* <NavLink to="/" iconUrl="./img/icons/house.svg" name="Home" /> */}
               <li>
                 <Link to="/">
-                  <img src="./img/icons/house.svg" className="icon" alt="" />
+                  <img src={house} className="icon" alt="" />
                   Home
                 </Link>
               </li>
               <li>
                 <Link to="about-us">
-                  <img
-                    src="./img/icons/person-bounding-box.svg"
-                    className="icon"
-                    alt=""
-                  />
+                  <img src={personBoundingBoxImg} className="icon" alt="" />
                   About
                 </Link>
               </li>
               <li>
                 <Link to="service">
-                  <img src="./img/icons/tools.svg" className="icon" alt="" />
+                  <img src={tools} className="icon" alt="" />
                   Service
                 </Link>
               </li>
               <li>
                 <Link to="login">
-                  <img
-                    src="./img/icons/door-open.svg"
-                    className="icon"
-                    alt=""
-                  />
+                  <img src={doorOpen} className="icon" alt="" />
                   Login
                 </Link>
               </li>
@@ -124,19 +127,19 @@ export const SideNav = () => {
             <div className="social-icons">
               <ul>
                 <li>
-                  <img src="./img/icons/facebook.svg" alt="" />
+                  <img src={facebookImg} alt="" />
                 </li>
                 <li>
-                  <img src="./img/icons/linkedin.svg" alt="" />
+                  <img src={linkedinImg} alt="" />
                 </li>
                 <li>
-                  <img src="./img/icons/twitter.svg" alt="" />
+                  <img src={twitterImg} alt="" />
                 </li>
                 <li>
-                  <img src="./img/icons/google.svg" alt="" />
+                  <img src={googleImg} alt="" />
                 </li>
                 <li>
-                  <img src="./img/icons/github.svg" alt="" />
+                  <img src={githubImg} alt="" />
                 </li>
               </ul>
             </div>
@@ -166,19 +169,19 @@ export const SideNav = () => {
                 <div className="social-icons">
                   <ul>
                     <li>
-                      <img src="./img/icons/facebook.svg" alt="" />
+                      <img src={facebookImg} alt="" />
                     </li>
                     <li>
-                      <img src="./img/icons/linkedin.svg" alt="" />
+                      <img src={linkedinImg} alt="" />
                     </li>
                     <li>
-                      <img src="./img/icons/twitter.svg" alt="" />
+                      <img src={twitterImg} alt="" />
                     </li>
                     <li>
-                      <img src="./img/icons/google.svg" alt="" />
+                      <img src={googleImg} alt="" />
                     </li>
                     <li>
-                      <img src="./img/icons/github.svg" alt="" />
+                      <img src={githubImg} alt="" />
                     </li>
                   </ul>
                 </div>
@@ -189,11 +192,15 @@ export const SideNav = () => {
               <li>
                 <Link to="/dashbord">Dashboard</Link>
               </li>
+              {/* <hr /> */}
               <li>
-                <Link to="/dashbord/profile">Profile</Link>
+                <Link>Explor</Link>
               </li>
               <li>
-                <Link>Link1</Link>
+                <Link>Post Ads</Link>
+              </li>
+              <li>
+                <Link to="/dashbord/profile">Profile</Link>
               </li>
             </ul>
           </div>

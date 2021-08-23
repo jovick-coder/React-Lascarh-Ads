@@ -6,7 +6,7 @@ const DashBordFrame = ({ children, pageName }) => {
   return (
     <>
       <section id="dashbord">
-        <div className="top-nav">Log</div>
+        <div className="top-nav">Logo</div>
         <div className="flexbox">
           <div className="item side-nav">
             <div className="">

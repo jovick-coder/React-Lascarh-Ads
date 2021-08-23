@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
 }
-.profile-div .flexboxs .item {
-  border: solid;
-}
+/* .profile-div .flexboxs .item {
+  /* border: solid; */
+/* padding: ; *
+} */
 .profile-div .flexboxs .profile-img {
   width: 200px;
 
@@ -14,7 +15,7 @@
   width: 300px;
   display: flex;
   align-items: center;
-
+  padding: 0px 20px;
   /* border: solid; */
 }
 .profile-div .flexboxs img {
@@ -30,10 +31,14 @@
   display: flex;
 
   min-width: 200px;
+  max-width: 200px;
   height: 200px;
-  border: solid #000;
+  /* border: solid #000; */
   border-radius: 50%;
   overflow: hidden;
+}
+.profile-div .flexboxs .pic-div img {
+  width: 200px;
 }
 @media (min-width: 0px) and (max-width: 425px) {
   .profile-div .flexboxs {

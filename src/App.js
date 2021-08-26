@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom'
+import PostAdsForm from './components/postAdsFrom/PostAdsForm.component';
 // import { SideNav } from './components/nav_bar/nav_bar.component';
 import AboutPage from './pages/about_page/about_page.component';
 import DashBord from './pages/dashbord_page/dashbord_page.component';
@@ -14,6 +15,7 @@ const App = () => {
     return (
         <>
             <Switch>
+                <Route path="/dashbord/post-ads" exact component={PostAdsForm} />
                 <Route path="/dashbord/explore" exact component={ExplorePage} />
                 <Route path="/dashbord/profile" exact component={ProfilePage} />
                 <Route path="/dashbord" exact component={DashBord} />

@@ -4,14 +4,17 @@ import { Route, Redirect, Switch } from 'react-router-dom'
 import AboutPage from './pages/about_page/about_page.component';
 import DashBord from './pages/dashbord_page/dashbord_page.component';
 import ErrorPage from './pages/error_page/error_page.component';
+import ExplorePage from './pages/explore_page/explore_page.component';
 import HomePage from './pages/home_page/home_page.component';
 import LoginPage, { ForgotPassword, SignInPage } from './pages/login_page/login_page.component';
 import ProfilePage from './pages/profile_page/profile_page.component';
+
 
 const App = () => {
     return (
         <>
             <Switch>
+                <Route path="/dashbord/explore" exact component={ExplorePage} />
                 <Route path="/dashbord/profile" exact component={ProfilePage} />
                 <Route path="/dashbord" exact component={DashBord} />
                 <Route path="/forgot-password" exact component={ForgotPassword} />

@@ -1,0 +1,39 @@
+.card-div {
+  width: 100%;
+  /* max-width: 300px; */
+  /* background-color: red; */
+  /* padding: 20px; */
+  position: relative;
+  z-index: -1;
+  margin: 5px 2px;
+}
+.ads-card {
+  /* z-index: -1; */
+  position: unset;
+  border: solid 2px #ddd;
+  border-radius: 10px;
+}
+.ads-card-header {
+  background-color: rgb(240, 240, 240);
+  color: rgb(97, 97, 97);
+  padding: 10px 15px;
+  border-bottom: solid 1px rgb(148, 148, 148);
+}
+.ads-card-body {
+  padding: 20px;
+  background-color: white;
+}
+.ads-div {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+.ads {
+  color: white;
+  font-size: x-small;
+  background-color: rgba(56, 56, 56, 0.8);
+  padding: 5px;
+  margin: 0;
+  border-radius: 5px;
+  /* width: 40px; */
+}

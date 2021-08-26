@@ -197,7 +197,7 @@ export const SideNav = () => {
                 <Link to="/dashbord/explore">Explore</Link>
               </li>
               <li>
-                <Link>Post Ads</Link>
+                <Link to="/dashbord/post-ads">Post Ads</Link>
               </li>
               <li>
                 <Link to="/dashbord/profile">Profile</Link>

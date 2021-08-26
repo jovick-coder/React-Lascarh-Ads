@@ -6,6 +6,7 @@ import AdsCard from '../../components/ads_card/ads_card.component'
 import NavBar from '../../components/nav_bar/nav_bar.component'
 import './home_page.style.css'
 import { Link } from 'react-router-dom'
+import Ads from '../../components/Ads/Ads.componet'
 
 const HomePage = () => {
   return (
@@ -87,17 +88,20 @@ const HomePage = () => {
             consequuntur laborum mollitia.
           </div>
           <div className="flexbox">
+            {/* <div className="item">
+              <Ads />
+            </div> */}
             <div className="item">
-              <AdsCard />
+              <Ads imgUrl="/img/undraw_Upload_image.png" />
             </div>
             <div className="item">
-              <AdsCard />
+              <Ads imgUrl="/img/undraw_Online_posts.png" />
             </div>
             <div className="item">
-              <AdsCard />
+              <Ads imgUrl="/img/undraw_social_dashboard.png" />
             </div>
             <div className="item">
-              <AdsCard />
+              <Ads imgUrl="/img/undraw_online_ad.png" />
             </div>
           </div>
         </div>

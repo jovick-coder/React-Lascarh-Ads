@@ -10,6 +10,9 @@ const ProfilePage = () => {
       <DashBordFrame pageName="Profile Page">
         <div class="container">
           {/* <!-- Stack the columns on mobile by making one full-width and the other half-width --> */}
+          <GroupCard>
+            <b>Total post</b> 20
+          </GroupCard>
           <div class="row">
             <div class="col">
               <GroupCard>
@@ -35,7 +38,7 @@ const ProfilePage = () => {
                       </div>
                     </div>
                   </div>
-                  <Link>
+                  <Link to="">
                     <button className="btn btn-primary btn-sm float-end">
                       Edit Profile
                     </button>

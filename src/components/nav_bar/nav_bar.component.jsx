@@ -194,7 +194,7 @@ export const SideNav = () => {
               </li>
               {/* <hr /> */}
               <li>
-                <Link>Explor</Link>
+                <Link to="/dashbord/explore">Explore</Link>
               </li>
               <li>
                 <Link>Post Ads</Link>

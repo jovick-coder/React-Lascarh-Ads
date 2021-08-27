@@ -6,8 +6,8 @@
   width: 40vw;
   height: 100vh;
   overflow: hidden;
-  /* left: 0;
-  position: fixed; */
+  left: 0;
+  position: fixed;
 }
 /* #side-nav .nav {
   /* border: solid; *

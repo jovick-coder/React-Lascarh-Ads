@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Container, Row, Form, Col } from 'react-bootstrap'
 import Ads from '../Ads/Ads.componet'
 import './postAdsForm.style.css'
@@ -8,9 +8,9 @@ const PostAdsForm = () => {
   const [title, settitle] = useState('')
   const [about, setAbout] = useState('')
 
-  const [img_url, setImg_url] = useState('./img/image.svg')
+  const [img_url, setImg_url] = useState('')
   const onsubmit = () => {
-    if (img_url !== './img/image.svg') {
+    if (img_url !== '') {
       if (title !== '' && about !== '') {
         const newAds = {
           title,
@@ -40,16 +40,26 @@ const PostAdsForm = () => {
   }
 
   return (
-    <Fragment>
+    <section id="post-ads-form">
       <Container>
         <Row>
           <div className="img-div">
-            <label htmlFor="img-input">
-              <img className="img" src={img_url} alt="img" />
-            </label>
+            {img_url === '' ? (
+              'Select image'
+            ) : (
+              <img
+                className="img"
+                src={img_url}
+                // style={{ width: '100%', display: 'block' }}
+                alt="img"
+              />
+            )}
           </div>
+          <label className="btn btn-primary" htmlFor="img-input">
+            select an image
+          </label>
         </Row>
-        <Row>
+        <div className="flexbox">
           <input
             type="file"
             name=""
@@ -57,32 +67,40 @@ const PostAdsForm = () => {
             id="img-input"
             onChange={imageHandler}
           />
-          <Col>
+          <div className="item">
             <Form.Control
               type="text"
               placeholder="Ads title"
               className="m-3"
               onChange={(e) => settitle(e.target.value)}
             />
-          </Col>
-          <Col>
-            {' '}
+          </div>
+          <div className="item">
             <textarea
               className="form-control m-3"
               id="dropdownCheck"
               placeholder="About Ads"
               onChange={(e) => setAbout(e.target.value)}
             ></textarea>
-          </Col>
-        </Row>
+          </div>{' '}
+        </div>
         <button className="btn btn-secondary " onClick={onsubmit}>
           submit
         </button>
       </Container>
       {adsList.map((ads) => (
+        // <div>
+        //   <img src={ads.imgUrl} alt="ads" />
+        //   <p>{ads.title}</p>
+        //   <p>{ads.about}</p>
+        // </div>
         <Ads title={ads.title} about={ads.about} imgUrl={ads.imgUrl} />
       ))}
-    </Fragment>
+
+      {/* {useEffect(() => {
+       
+      }, [adsList])} */}
+    </section>
   )
 }
 

@@ -3,7 +3,7 @@
   max-width: 300px;
   /* background-color: red; */
   /* padding: 20px; */
-  position: relative;
+  /* position: relative; */
   z-index: -1;
   margin: 5px 2px;
 }
@@ -24,16 +24,14 @@
   background-color: white;
 }
 .ads-div {
-  position: absolute;
-  top: 8px;
-  left: 16px;
+  margin: 10px;
 }
 .ads {
   color: white;
   font-size: x-small;
   background-color: rgba(56, 56, 56, 0.8);
   padding: 5px;
-  margin: 0;
-  border-radius: 5px;
-  /* width: 40px; */
+  border-radius: 3px;
+  text-align: center;
+  width: 30px;
 }

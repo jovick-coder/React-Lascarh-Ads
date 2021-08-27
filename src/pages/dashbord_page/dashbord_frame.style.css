@@ -2,11 +2,7 @@
   background-color: rgb(123, 123, 123);
   width: 100%;
   height: 50px;
-  /* position: absolute; */
-  /* position: relative; */
-  position: sticky;
-  top: 0;
-  z-index: 1000px;
+  position: fixed;
 }
 #dashbord .flexbox {
   display: flex;
@@ -44,6 +40,6 @@
   #dashbord .side-nav {
     /* position: relative; */
     /* position: absolute; */
-    z-index: 10px;
+    /* z-index: 10px; */
   }
 }

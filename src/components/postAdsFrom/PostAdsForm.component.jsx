@@ -45,36 +45,10 @@ const PostAdsForm = () => {
         <Row>
           <div className="img-div">
             <label htmlFor="img-input">
-              <img
-                className="img"
-                src={img_url}
-                // style={{ width: '100%', display: 'block' }}
-                alt="img"
-              />
+              <img className="img" src={img_url} alt="img" />
             </label>
           </div>
         </Row>
-        {/* <div>
-          <b>Title: </b>
-          <br />
-          {title === '' ? (
-            <span className="mx-3">Ads Title</span>
-          ) : (
-            <span className="mx-3">{title}</span>
-          )}
-          <p />
-        </div>
-
-        <div>
-          <b>About: </b>
-          <br />
-          {about === '' ? (
-            <span className="mx-3">About Ads</span>
-          ) : (
-            <span className="mx-3">{about}</span>
-          )}
-          <p />
-        </div> */}
         <Row>
           <input
             type="file"
@@ -108,10 +82,6 @@ const PostAdsForm = () => {
       {adsList.map((ads) => (
         <Ads title={ads.title} about={ads.about} imgUrl={ads.imgUrl} />
       ))}
-
-      {/* {useEffect(() => {
-       
-      }, [adsList])} */}
     </Fragment>
   )
 }

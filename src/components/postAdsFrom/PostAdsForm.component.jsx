@@ -60,19 +60,19 @@ const PostAdsForm = () => {
           </label>
         </Row>
         <div className="flexbox">
-          <input
-            type="file"
-            name=""
-            style={{ display: 'none' }}
-            id="img-input"
-            onChange={imageHandler}
-          />
           <div className="item">
             <Form.Control
               type="text"
               placeholder="Ads title"
               className="m-3"
               onChange={(e) => settitle(e.target.value)}
+            />
+            <input
+              type="file"
+              name=""
+              style={{ display: 'none' }}
+              id="img-input"
+              onChange={imageHandler}
             />
           </div>
           <div className="item">

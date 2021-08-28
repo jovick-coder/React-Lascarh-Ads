@@ -10,6 +10,9 @@ const Ads = ({ title, about, imgUrl }) => {
     <React.Fragment>
       <div className="card-div">
         <div className="ads-card">
+          <div className="ads-div">
+            <div className="ads">Ads</div>
+          </div>
           <div className="ads-card-img">
             <ModalImage
               imgUrl={imgUrl ? imgUrl : { altImg }}
@@ -19,9 +22,6 @@ const Ads = ({ title, about, imgUrl }) => {
                   : 'Some quick example text to build on the card title'
               }
             />
-          </div>
-          <div className="ads-div">
-            <div className="ads">Ads</div>
           </div>
           <div className="ads-card-header">
             <h5>{title ? title : 'Ads Header'}</h5>{' '}

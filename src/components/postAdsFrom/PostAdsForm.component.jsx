@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Row, Form, Col } from 'react-bootstrap'
+import { Container, Row, Form } from 'react-bootstrap'
 import Ads from '../Ads/Ads.componet'
 import './postAdsForm.style.css'
 

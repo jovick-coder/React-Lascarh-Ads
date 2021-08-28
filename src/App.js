@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Redirect, Switch } from 'react-router-dom'
 import PostAdsPage from './pages/postAds_page/postAds_page.component';
-// import { SideNav } from './components/nav_bar/nav_bar.component';
 import AboutPage from './pages/about_page/about_page.component';
 import DashBord from './pages/dashbord_page/dashbord_page.component';
 import ErrorPage from './pages/error_page/error_page.component';

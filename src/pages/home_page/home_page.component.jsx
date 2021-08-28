@@ -2,7 +2,7 @@ import React from 'react'
 // import { Container, Row, Col } from 'react-bootstrap'
 import Footer from '../../components/footer/footer.component'
 
-import AdsCard from '../../components/ads_card/ads_card.component'
+// import AdsCard from '../../components/ads_card/ads_card.component'
 import NavBar from '../../components/nav_bar/nav_bar.component'
 import './home_page.style.css'
 import { Link } from 'react-router-dom'

@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.98131f5b.chunk.css",
+    "main.js": "/static/js/main.2199531f.chunk.js",
+    "main.js.map": "/static/js/main.2199531f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.82e55cb8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.82e55cb8.js.map",
+    "static/css/2.3ab4f688.chunk.css": "/static/css/2.3ab4f688.chunk.css",
+    "static/js/2.65410c32.chunk.js": "/static/js/2.65410c32.chunk.js",
+    "static/js/2.65410c32.chunk.js.map": "/static/js/2.65410c32.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.3ab4f688.chunk.css.map": "/static/css/2.3ab4f688.chunk.css.map",
+    "static/css/main.98131f5b.chunk.css.map": "/static/css/main.98131f5b.chunk.css.map",
+    "static/js/2.65410c32.chunk.js.LICENSE.txt": "/static/js/2.65410c32.chunk.js.LICENSE.txt",
+    "static/media/door-open.dd5ae7c2.svg": "/static/media/door-open.dd5ae7c2.svg",
+    "static/media/facebook.4d446026.svg": "/static/media/facebook.4d446026.svg",
+    "static/media/github.22e65707.svg": "/static/media/github.22e65707.svg",
+    "static/media/google.30b82982.svg": "/static/media/google.30b82982.svg",
+    "static/media/house.8173eeb9.svg": "/static/media/house.8173eeb9.svg",
+    "static/media/linkedin.2eda7bdd.svg": "/static/media/linkedin.2eda7bdd.svg",
+    "static/media/person-bounding-box.d01c4af8.svg": "/static/media/person-bounding-box.d01c4af8.svg",
+    "static/media/tools.43037f74.svg": "/static/media/tools.43037f74.svg",
+    "static/media/twitter.db226d55.svg": "/static/media/twitter.db226d55.svg",
+    "static/media/undraw_Upload_image.2aee635b.png": "/static/media/undraw_Upload_image.2aee635b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82e55cb8.js",
+    "static/css/2.3ab4f688.chunk.css",
+    "static/js/2.65410c32.chunk.js",
+    "static/css/main.98131f5b.chunk.css",
+    "static/js/main.2199531f.chunk.js"
+  ]
+}
